@@ -1,4 +1,6 @@
-/* everthing in here is a comment */
+/*
+everthing in here is a comment */
+
 /* colors used:
 background-color: #E7F6F2;
 first-color: #2C3333;
@@ -8,20 +10,20 @@ white-color: #fff;
 */
 
 :root {
-  --first-color: #E7F6F2;
-  --second-color: #2C3333;
-  --third-color: #395B64;
-  --fourth-color: #5C527F;
+  --first-color: #e7f6f2;
+  --second-color: #2c3333;
+  --third-color: #395b64;
+  --fourth-color: #5c527f;
   --fifth-color: #fff;
 }
 
 body {
   background-color: var(--first-color);
   color: var(--second-color);
-  font-family: 'Roboto Mono';
+  font-family: 'Roboto Mono', monospace;
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.4
+  line-height: 1.4;
 }
 
 .page-header {
@@ -44,6 +46,7 @@ nav {
   font-weight: 700;
   font-variant: small-caps;
 }
+
 .navigation-list {
   list-style-type: none;
 }
@@ -90,34 +93,33 @@ a:visited {
   color: var(--fourth-color);
 }
 
-.button:visited {
-  color: var(--fifth-color);
-}
-
-a:hover, a:focus
-/* focus is for keyboard navigation */
-{
+/* focus is for keyboard navigation text-decoration removes underlining when hovering */
+a:hover,
+a:focus {
   text-decoration: none;
   transition: 0.2s font-size, text-decoration;
-  /* removes underlining when hovering */
 }
 
 button,
 .button {
-  border: none;
-  /* overwrites browser defaults and resets the border */
+  border: none;  /*
+  overwrites browser defaults and resets the border */
   display: inline-block;
-  font-family: inherit;
-  /* copies font from outer container --> body */
+  font-family: inherit;  /*
+  copies font from outer container --> body */
   background-color: var(--fourth-color);
   color: var(--fifth-color);
   text-decoration: none;
   padding: 10px; /* adds spacing/size */
   border-radius: 5px; /* for round corners */
-  border-bottom: 2.5px solid rgba(0, 0, 0, 0.3);
-  /* adds a black bottom but slightly transparent (0,3) */
+  border-bottom: 2.5px solid rgba(0, 0, 0, 0.3);  /*
+  adds a black bottom but slightly transparent (0,3) */
   border-right: 2.5px solid rgba(0, 0, 0, 0.5);
   transition-duration: 0.2s opacity;
+}
+
+.button:visited {
+  color: var(--fifth-color);
 }
 
 .cv-button,
@@ -131,11 +133,10 @@ button:hover,
 button:focus,
 .button:hover,
 .button:focus {
-  cursor: pointer;
-  /* cursor turns to a hand */
+  cursor: pointer; /*
+  cursor turns to a hand */
   opacity: 80%;
 }
-
 
 /* Test button index.html
 
@@ -152,12 +153,11 @@ border-right: 2.5px solid rgba(255, 255, 255, 0.5);
 .project-list__item {
   display: inline-block;
   width: 33%;
-}
-/* end Grid Fallback */
+} /* end Grid Fallback */
 
 .project-list {
-  display: grid;
-  /* grid-template-column: 300px 300px 300px;
+  display: grid;/*
+  grid-template-column: 300px 300px 300px;
   fractions (fr) are better -- they are responsive */
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
@@ -209,6 +209,7 @@ border-right: 2.5px solid rgba(255, 255, 255, 0.5);
   .project-list {
     grid-gap: 10px;
   }
+
   .project-list__item:first-child {
     grid-column: auto / auto;
     grid-row: auto / auto;
@@ -228,16 +229,15 @@ border-right: 2.5px solid rgba(255, 255, 255, 0.5);
   0% {
     fill: #edc655;
   }
+
   50% {
     fill: #fcffad;
   }
+
   100% {
     fill: #f76414;
   }
 }
-
-
-
 
 .sun {
   animation: 4s color-change infinite alternate linear;
@@ -249,11 +249,11 @@ animation-iteration-count: infinite;
 animation-direction: alternate;
 animation-timing-function: linear;      */
 
-
 @keyframes cloud-move {
   0% {
     transform: translate(0, 50px);
   }
+
   100% {
     transform: translate(200px, 50px);
   }
@@ -269,11 +269,11 @@ animation-iteration-count: infinite;
 animation-direction: alternate;
 animation-timing-function: linear;   */
 
-
 @keyframes cloud-move-reverse {
   0% {
     transform: translate(446px, 48px);
   }
+
   100% {
     transform: translate(100px, 48px);
   }
