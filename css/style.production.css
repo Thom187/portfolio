@@ -5,10 +5,10 @@
 * Browsers: last 2 version
 */
 
-/* everthing in here is a comment */
-
 /*
-colors used:
+everthing in here is a comment */
+
+/* colors used:
 background-color: #E7F6F2;
 first-color: #2C3333;
 second-color: #395B64;
@@ -16,10 +16,18 @@ third-color: #5C527F;
 white-color: #fff;
 */
 
+:root {
+  --first-color: #e7f6f2;
+  --second-color: #2c3333;
+  --third-color: #395b64;
+  --fourth-color: #5c527f;
+  --fifth-color: #fff;
+}
+
 body {
-  background-color: #e7f6f2;
-  color: #2c3333;
-  font-family: "Roboto Mono", monospace;
+  background-color: var(--first-color);
+  color: var(--second-color);
+  font-family: 'Roboto Mono', monospace;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.4;
@@ -89,76 +97,82 @@ h1 {
 }
 
 #contact-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   margin-top: 25px;
 }
 
-.profile__portrait {
+#profile-portrait {
   float: left;
   width: 250px;
   margin-right: 40px;
   border-radius: 50%;
 }
 
+.profile-grid__item {
+  display: inline-block;
+  width: 50%;
+}
+
+.profile-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 20px 2fr;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 20px;
+}
+
+.profile-grid__item {
+  width: auto;
+}
+
 a {
-  color: #395b64;
+  color: var(--third-color);
 }
 
 a:visited {
-  color: #5c527f;
+  color: var(--fourth-color);
 }
 
-.button:visited {
-  color: #fff;
-}
-
+/* focus is for keyboard navigation text-decoration removes underlining when hovering */
 a:hover,
-a:focus
-/* focus is for keyboard navigation */ {
+a:focus {
   text-decoration: none;
   -webkit-transition: 0.2s font-size, -webkit-text-decoration;
   transition: 0.2s font-size, -webkit-text-decoration;
   transition: 0.2s font-size, text-decoration;
-  transition: 0.2s font-size, text-decoration, -webkit-text-decoration; /*
-  removes underlining when hovering */
+  transition: 0.2s font-size, text-decoration, -webkit-text-decoration;
 }
 
-button {
-  border: none; /*
-  overwrites browser defaults and resets the border */
-  display: inline-block;
-  font-family: inherit;/*
-  copies font from outer container --> body */
-  background-color: #5c527f;
-  color: #fff;
-  text-decoration: none;
-  padding: 10px; /* adds spacing/size */
-  border-radius: 5px; /* for round corners */
-  border-bottom: 2.5px solid rgba(0, 0, 0, 0.3);/*
-  adds a black bottom but slightly transparent (0,3) */
-  border-right: 2.5px solid rgba(0, 0, 0, 0.5);
-  -webkit-transition-duration: 0.2s opacity;
-  transition-duration: 0.2s opacity;
-}
-
+button,
 .button {
-  border: none;/*
+  border: none;  /*
   overwrites browser defaults and resets the border */
   display: inline-block;
-  font-family: inherit;/*
+  font-family: inherit;  /*
   copies font from outer container --> body */
-  background-color: #5c527f;
-  color: #fff;
+  background-color: var(--fourth-color);
+  color: var(--fifth-color);
   text-decoration: none;
   padding: 10px; /* adds spacing/size */
   border-radius: 5px; /* for round corners */
-  border-bottom: 2.5px solid rgba(0, 0, 0, 0.3);/*
+  border-bottom: 2.5px solid rgba(0, 0, 0, 0.3);  /*
   adds a black bottom but slightly transparent (0,3) */
   border-right: 2.5px solid rgba(0, 0, 0, 0.5);
   -webkit-transition-duration: 0.2s opacity;
   transition-duration: 0.2s opacity;
+}
+
+.button:visited {
+  color: var(--fifth-color);
 }
 
 .cv-button,
@@ -174,7 +188,7 @@ button:hover,
 button:focus,
 .button:hover,
 .button:focus {
-  cursor: pointer;/*
+  cursor: pointer; /*
   cursor turns to a hand */
   opacity: 80%;
 }
@@ -194,7 +208,7 @@ border-right: 2.5px solid rgba(255, 255, 255, 0.5);
 .project-list__item {
   display: inline-block;
   width: 33%;
-}/* end Grid Fallback */
+} /* end Grid Fallback */
 
 .project-list {
   display: -ms-grid;
@@ -218,7 +232,10 @@ border-right: 2.5px solid rgba(255, 255, 255, 0.5);
   grid-column: 2 / 2;
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
-  grid-row: 1/ 3;
+  grid-row: 1 / 3; /*
+  shortform: grid-column-start: 2;
+             grid-column-end: 2; and so on...
+             ...     */
 }
 
 .project-list__item:last-child {
