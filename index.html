@@ -14,7 +14,7 @@
       type="text/css"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     />
-    <link rel="stylesheet" type="text/css" href="css/style.production.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
   </head>
   <body>
     <header class="page-header">
@@ -53,20 +53,27 @@
     </header>
     <main>
       <div class="profile">
-        <img
-          src="img/diver.jpg"
-          class="profile__portrait"
-          alt="A picture of me while scuba diving"
-        />
-        <h1>Hello World!</h1>
-        <p>My name is Tom Hoppe.</p>
-        <p>I am a <span>web</span> developer in progress from Berlin.</p>
-        <a href="#">Check out some of my code</a>
-        <!-- In here are two Buttons for Training
-      <button type="button">Default button</button>
-      <button class="button__secondary" type="button">Secondary button</button>
-    -->
-      </div>
+<div class="profile-grid">
+<div class="profile-grid__item">
+  <img
+    src="img/diver.jpg"
+
+    id="profile-portrait"
+    alt="A picture of me while scuba diving"
+  />
+  </div>
+  <div class="profile-grid__item">
+  <h1>Hello World!</h1>
+  <p>My name is Tom Hoppe.</p>
+  <p>I am a <span>web</span> developer in progress from Berlin.</p>
+  <a href="#">Check out some of my code</a>
+  </div>
+  <!-- In here are two Buttons for Training
+<button type="button">Default button</button>
+<button class="button__secondary" type="button">Secondary button</button>
+-->
+</div>
+</div>
     </main>
     <footer class="page-footer">
       <p>Find me on</p>
