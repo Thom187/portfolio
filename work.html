@@ -1,104 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>My Projects</title>
-    <link rel="shortcut icon" href="img/wiki.ico" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-    />
-    <link rel="stylesheet" type="text/css" href="css/style.production.css" />
-  </head>
-  <body>
-    <header class="page-header">
-      <img
-        src="img/logo_tom_hoppe.jpg"
-        alt="The Logo of Tom Hoppe, the full name written"
-        class="page-header__item"
-      />
-      <nav class="page-header__item">
-        <ul role="menubar" class="navigation-list">
-          <li role="presentation">
-            <a href="index.html" role="menuitem" class="navigation-list__item"
-              >Home</a
-            >
-          </li>
-          <li role="presentation">
-            <a href="about.html" role="menuitem" class="navigation-list__item"
-              >About me</a
-            >
-          </li>
-          <li role="presentation">
-            <a
-              href="work.html"
-              role="menuitem"
-              class="navigation-list__item--active"
-              >My Projects</a
-            >
-          </li>
-          <li role="presentation">
-            <a href="contact.html" role="menuitem" class="navigation-list__item"
-              >Contact</a
-            >
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <section>
-      <div class="project-heading">
-        <h1>My Projects</h1>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Projects</title>
+  <link rel="shortcut icon" href="img/wiki.ico" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.production.css" />
+</head>
+
+<body>
+  <header class="page-header">
+    <img src="img/logo_tom_hoppe.jpg" alt="The Logo of Tom Hoppe, the full name written" class="page-header__item" />
+    <nav class="page-header__item">
+      <ul role="menubar" class="navigation-list">
+        <li role="presentation">
+          <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
+        </li>
+        <li role="presentation">
+          <a href="about.html" role="menuitem" class="navigation-list__item">About me</a>
+        </li>
+        <li role="presentation">
+          <a href="work.html" role="menuitem" class="navigation-list__item--active">My Projects</a>
+        </li>
+        <li role="presentation">
+          <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <section>
+    <div class="project-heading">
+      <h1>My Projects</h1>
+    </div>
+    <div class="project-list">
+      <div class="project-list__item">
+        <h2>Pokedex</h2>
+        <p>
+          A small web application built with HTML, CSS, and JavaScript that holds information about Pokemon. It loads
+          Pokemon data from an external API and enables the viewing of data points in detail.
+        </p>
+        <a href="https://thom187.github.io/simple-js-app/" target="_blank">Live Demo</a>
+        <a href="https://github.com/Thom187/simple-js-app" target="_blank">GitHub Link</a>
       </div>
-      <div class="project-list">
-        <div class="project-list__item">
-          <h2>CareerFoundry-Testweek</h2>
-          <p>
-            We created a simple Portfolio site and learned basic HTML, CSS and
-            JavaScript.
-          </p>
-          <a href="portfolio/index.html" target="_blank">Project 1</a>
-        </div>
-        <div class="project-list__item">
-          <h2>Project 2</h2>
-          <p>The second Project.</p>
-          <a href="#" target="_blank">Link to the second project</a>
-        </div>
-        <div class="project-list__item">
-          <h2>Project 3</h2>
-          <p>The third Project.</p>
-          <a href="#" target="_blank">Link to the third project</a>
-        </div>
-        <div class="project-list__item">
-          <h2>Project 4</h2>
-          <p>The fourth Project.</p>
-          <a href="#" target="_blank">Link to the fourth project</a>
-        </div>
-        <div class="project-list__item">
-          <h2>Project 5</h2>
-          <p>The fifth Project.</p>
-          <a href="#" target="_blank">Link to the fifth project</a>
-        </div>
-        <div class="project-list__item">
-          <h2>Project 6</h2>
-          <p>The sixth Project.</p>
-          <a href="#" target="_blank">Link to the sixth project</a>
-        </div>
+      <div class="project-list__item">
+        <h2>To-Do-List</h2>
+        <p>A very simple To-Do-List.</p>
+        <a href="https://thom187.github.io/to-do-list-app/" target="_blank">Live Demo</a>
+        <a href="https://github.com/Thom187/to-do-list-app" target="_blank">GitHub Link</a>
       </div>
-    </section>
-    <footer class="page-footer">
-      <p>Find me on</p>
-      <div class="social-media">
-        <img src="img/github_icon.svg" alt="Github" />
-        <img src="img/twitter_icon.svg" alt="Twitter" />
-        <img src="img/linkedin_icon.svg" alt="LinkedIn" />
+      <div class="project-list__item">
+        <h2>Meet App</h2>
+        <p>A serverless, progressive web application (PWA) built with React using a test-driven development (TDD)
+          technique. Google Calendar API is used to fetch upcoming events. </p>
+        <a href="https://thom187.github.io/meet/" target="_blank">Live Demo</a>
+        <a href="https://github.com/Thom187/meet" target="_blank">GitHub Link</a>
       </div>
-    </footer>
-    <script src="js/tota11y.min.js"></script>
-  </body>
+      <div class="project-list__item">
+        <h2>REST API - myFlix</h2>
+        <p>The server-side component of a “movies” web application. The web application will provide users with access
+          to information about different movies, directors, and genres. Users will be able to sign up, update their
+          personal information, and create a list of their favorite movies.</p>
+        <a href="https://github.com/Thom187/movie_api" target="_blank">GitHub Link</a>
+      </div>
+      <div class="project-list__item">
+        <h2>myFlix App</h2>
+        <p>The fifth Project.</p>
+        <a href="#" target="_blank">Link to the fifth project</a>
+      </div>
+      <div class="project-list__item">
+        <h2>Project 6</h2>
+        <p>The sixth Project.</p>
+        <a href="#" target="_blank">Link to the sixth project</a>
+      </div>
+    </div>
+  </section>
+  <footer class="page-footer">
+    <p>Find me on</p>
+    <div class="social-media">
+      <img src="img/github_icon.svg" alt="Github" />
+      <img src="img/twitter_icon.svg" alt="Twitter" />
+      <img src="img/linkedin_icon.svg" alt="LinkedIn" />
+    </div>
+  </footer>
+  <script src="js/tota11y.min.js"></script>
+</body>
+
 </html>
