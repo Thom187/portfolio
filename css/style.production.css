@@ -194,7 +194,9 @@ button,
 button:hover,
 button:focus,
 .button:hover,
-.button:focus {
+.button:focus,
+.preview-button:hover,
+.preview-button:focus {
   cursor: pointer;
   /*
   cursor turns to a hand */
