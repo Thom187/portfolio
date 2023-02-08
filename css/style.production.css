@@ -31,6 +31,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.4;
+  margin: 12px;
 }
 
 .page-header {
@@ -125,10 +126,10 @@ h1 {
 }
 
 .profile-grid {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 20px 2fr;
-  grid-template-columns: 1fr 2fr;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
   grid-gap: 20px;
 }
 
@@ -187,7 +188,7 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0 auto;
+  margin: 10px auto;
   text-align: center;
 }
 
