@@ -87,6 +87,10 @@ h1 {
   text-align: center;
 }
 
+p {
+  margin-inline: 5px;
+}
+
 .profile,
 .about,
 .experience,
@@ -266,12 +270,16 @@ border-right: 2.5px solid rgba(255, 255, 255, 0.5);
   margin-block: 65px;
 }
 
+.footer-link {
+  text-decoration: none;
+}
+
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-@media all and (max-width: 681px) {
+@media all and (max-width: 680px) {
   .project-list {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;

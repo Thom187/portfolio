@@ -1,3 +1,4 @@
+/*
 (function() {
   let form = document.querySelector('#contact-form');
   let emailInput = document.querySelector('#email');
@@ -56,3 +57,4 @@
   email.addEventListener ('input', validateEmail);
 
 })();
+*/
