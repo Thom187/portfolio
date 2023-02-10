@@ -31,7 +31,11 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.4;
-  margin: 12px;
+  margin: 10px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .page-header {
@@ -39,8 +43,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  padding: 20px;
-  margin-bottom: 65px;
+  padding: 10px;
+  margin-bottom: 35px;
 }
 
 .page-header__item {
@@ -85,10 +89,6 @@ h1 {
   font-size: 34px;
   font-weight: 700;
   text-align: center;
-}
-
-p {
-  margin-inline: 5px;
 }
 
 .profile,
@@ -258,16 +258,13 @@ border-right: 2.5px solid rgba(255, 255, 255, 0.5);
 }
 */
 .page-footer {
-  clear: both;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
   text-align: center;
-  margin-block: 65px;
+  margin-top: 50px;
+  margin-bottom: 35px;
 }
 
 .footer-link {
