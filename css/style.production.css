@@ -108,6 +108,7 @@ h1 {
 #profile-portrait {
   float: left;
   width: 250px;
+  height: auto;
   border-radius: 50%;
 }
 
@@ -271,6 +272,8 @@ border-right: 2.5px solid rgba(255, 255, 255, 0.5);
 
 .footer-link {
   text-decoration: none;
+  width: 30px;
+  height: auto;
 }
 
 * {
